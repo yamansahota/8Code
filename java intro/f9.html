@@ -1,0 +1,60 @@
+<html>
+
+<body>
+    <link href="assets/css/f1style.css" rel="stylesheet">
+
+    <h1>What are Arrays in Java ?</h1>
+    <p>An array is a container object that holds a fixed number of values of a single type. The length of an array is
+        established when the array is created. After creation, its length is fixed.Each item in an array is called an
+        element, and each element is accessed by its numerical index.</p>
+
+    <p>The preceding program declares an array (named anArray) with the following line of code: <br><br>
+
+        // declares an array of integers <br>
+        int[] anArray; <br><br>
+        Like declarations for variables of other types, an array declaration has two components: the array's type and
+        the array's name. An array's type is written as type[], where type is the data type of the contained elements;
+        the brackets are special symbols indicating that this variable holds an array. The size of the array is not part
+        of its type (which is why the brackets are empty). An array's name can be anything you want, provided that it
+        follows the rules and conventions as previously discussed in the naming section. As with variables of other
+        types, the declaration does not actually create an array; it simply tells the compiler that this variable will
+        hold an array of the specified type. <br><br>
+
+        Similarly, you can declare arrays of other types: <br><br>
+
+        byte[] anArrayOfBytes; <br>
+        short[] anArrayOfShorts; <br>
+        long[] anArrayOfLongs; <br>
+        float[] anArrayOfFloats; <br>
+        double[] anArrayOfDoubles; <br>
+        boolean[] anArrayOfBooleans; <br>
+        char[] anArrayOfChars; <br>
+        String[] anArrayOfStrings; <br><br>
+        You can also place the brackets after the array's name: <br>
+
+        float anArrayOfFloats[];</p>
+        <h1>Types of Arrays :</h1>
+
+        <p><b>1. Single Dimensional Array :</b><br><br>
+            An array that has only one subscript or one dimension is known as a single-dimensional array. It is just a list of the same data type variables.One dimensional array can be of either one row and multiple columns or multiple rows and one column. <br><br>
+            Declaring the one dimensional array in java : <br>
+            int marks[] = {56, 98, 77, 89, 99}; 
+
+        </p>
+
+        <p><b>2. Multi-Dimensional Array</b> <br><br>
+            In not all cases, we implement a single-dimensional array. Sometimes, we are required to create an array within an array.Suppose we need to write a program that stores five different subjects and the marks of sixty students. In this case, we just need to implement 60 one-dimensional arrays with a length of five and then implement all these arrays in one array. Hence, we can make the 2D array with five columns and 60 rows. <br>
+
+            A multi-dimensional array is just an array of arrays that represents multiple rows and columns. These arrays include 2D, 3D, and nD types. 2D data like tables and matrices can be represented using this type of array. <br><br>
+            Declaring the 2D Array : <br>
+            int marks[][] = { <br>
+                {77,85,68,99,87}, <br>
+                {98,56,79,90,92}, <br>
+                {78,88,56,70,99} <br>
+            }; <br><br>
+OR <br>
+int marks[][] = new int[3][5];
+        </p>
+</body>
+
+</html>

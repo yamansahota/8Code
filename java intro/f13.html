@@ -1,0 +1,73 @@
+<html>
+
+<body>
+    <link href="assets/css/f1style.css" rel="stylesheet">
+
+    <h1>What is Abstract Classes ? </h1>
+    <p>An abstract class is a class that is declared abstract—it may or may not include abstract methods. Abstract
+        classes cannot be instantiated, but they can be subclassed.
+        Abstract means a small description that gives you an imaginative idea about the concept. Like a summary, a small
+        paragraph gives you a brief explanation of the whole book.
+
+        In the same way, Abstract Classes in Java simply declare the methods that are needed to be implemented by the
+        class which extends the abstract class. The abstract class hides the internal details of method implementation
+        showing only essential information to the user - the method name.
+
+        An abstract method is a method that is declared without an implementation (without braces, and followed by a
+        semicolon), like this: <br><br>
+
+        abstract void moveTo(double deltaX, double deltaY); <br><br>
+        If a class includes abstract methods, then the class itself must be declared abstract, as in: <br><br>
+
+        public abstract class GraphicObject { <br>
+        // declare fields <br>
+        // declare nonabstract methods <br>
+        abstract void draw(); <br>
+        }</p>
+
+    <h1>What are Abstract Methods ?</h1>
+    <p>If you use the abstract keyword while declaring the method, it is called an Abstract Method.
+
+        An Abstract Method does not contain anybody. Whenever you declare an abstract method, you must end it with a
+        semicolon as shown in the syntax below. An abstract method is always present inside an abstract class, you
+        cannot declare it inside the regular (not abstract) class.</p>
+    <p>Let's understand some of the rules on the usage of the Abstract Method -</p>
+    <ul>
+        <li>A method declared with the abstract keyword is called an Abstract method.</li>
+        <li>Abstract method can only be declared inside an abstract class or an interface.</li>
+        <li>Abstract methods must not contain any definition or body in abstract class.</li>
+        <li>You must end the declaration of the abstract method using ';'(semicolon).</li>
+        <li>To write the implementation code of these abstract methods, you must inherit the abstract class. Then the
+            child class can write the definition for the abstract methods.</li>
+        <li>If you don't define the abstract method inside the child class, then you must declare the child class as
+            abstract otherwise the compiler will throw an error.</li>
+    </ul>
+    <h2>Why Can’t We Create an Object of an Abstract Class?
+    </h2>
+    <p> If you have read till now, you know we cannot instantiate an
+        abstract class. Meaning you cannot create an object of the Abstract class.
+
+        Abstract Class can have abstract methods and abstract method does not contain any body or definition inside it.
+        This means that Abstract Class does not seem to be a complete class. It's just a template.
+
+        So imagine, if you create an object of that abstract class and try to access one of the abstract methods, it
+        will throw an error because there is nothing inside the method to perform.
+
+        For an object to run any method, it must have somebody and the abstract method does not have any. Hence we
+        cannot create the object of an abstract class.</p>
+    <h2>Accessing Constructors of Abstract Class :</h2>
+    <p>We can declare constructors of abstract classes. The Java Virtual Machine (JVM) is responsible to generate a
+        default constructor for every class in Java Program if there is no User Defined Constructor present. This same
+        applies to Abstract classes as well.
+
+        You can also create a user-defined parameterized constructor for your abstract class as well. Since abstract
+        classes are meant to be inherited, the child classes can instantiate the parent class as per its need using the
+        super() keyword.</p>
+
+        <h2>Using the final keyword in an Abstract Class</h2>
+        <p>
+            The final keyword is used when you want to declare a variable, method, or class as non-modifiable once assigned. If your variable is final, you cannot change its value. If you declare a method as final, you cannot override it by inheritance, and if you declare a class as final, you cannot inherit it.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<html>
+
+<body>
+    <link href="assets/css/f1style.css" rel="stylesheet">
+
+    <h1>What is Exception Handling in Java ? </h1>
+    <p>Exception handling in Java is the process of responding to the occurrence of exceptions(Exceptions are unwanted
+        conditions that disturb the program execution), it occurred.
+
+        Exceptional handling in Java is a very powerful mechanism as it helps to identify exceptional conditions and
+        maintain the flow of the program as expected, by handling/avoiding the errors if occurred. In some cases, it is
+        used to make the program user-friendly.</p>
+
+    <p>An exception is an unwanted or unexpected event that occurs during the execution of the program, that disrupts
+        the flow of the program.
+
+        For example, if a user is trying to divide an integer by 0 then it is an exception, as it is not possible
+        mathematically.
+
+        There are various types of interruptions while executing any program like errors, exceptions, and bugs. These
+        interruptions can be due to programming mistakes or due to system issues. Depending on the conditions they can
+        be classified as errors and exceptions.
+
+        Java has classes that are used to handle built-in exceptions and provision to create user-defined exceptions.
+        First, let's understand the meaning of the exception and error of the term.
+
+    </p>
+    <p>Exception handling in java is a mechanism to handle unwanted interruptions like exceptions and continue with the
+        normal flow of the program.
+
+        Java uses try-catch blocks and other keywords like finally, throw, and throws to handle exceptions. JVM(Java
+        Virtual Machine) by default handles exceptions, when an exception is raised it will halt the execution of the
+        program and throw the occurred exception.</p>
+    <h2>1. Exception : </h2>
+    <ul>
+        <li>As mentioned earlier exceptions are unwanted conditions that disrupt the flow of the program.</li>
+        <li>Exceptions usually occur due to the code and can be recovered.</li>
+        <li>Exceptions can be of both checked(exceptions that are checked by the compiler) and unchecked(exceptions that
+            cannot be checked by the compiler) type.</li>
+        <li>They can occur at both run time and compile time.</li>
+        <li>In Java, exceptions belong to java.lang.Exception class.</li>
+    </ul>
+
+    <h2>2. Errors :</h2>
+    <ul>
+        <li>An error is also an unwanted condition but it is caused due to lack of resources and indicates a serious
+            problem.</li>
+        <li>Errors are irrecoverable, they cannot be handled by the programmers.</li>
+        <li>Errors are of unchecked type only.</li>
+        <li>They can occur only at run time.</li>
+        <li>In java, errors belong to java.lang.error class.</li>
+    </ul>
+
+    <h1>Types of Exceptions Handling in Java : </h1>
+    <h2>1. Checked Exceptions</h2>
+    <ul>
+        <li>Checked exceptions are those exceptions that are checked at compile time by the compiler.</li>
+        <li>The program will not compile if they are not handled.</li>
+        <li>These exceptions are child classes of the Exception class.</li>
+        <li>OException, ClassNotFoundException, InvocationTargetException, and SQL Exception are a few of the checked exceptions in Java.</li>
+    </ul>
+
+    <h2>2. Unchecked Exception : </h2>
+    <ul>
+        <li>Unchecked exceptions are those exceptions that are checked at run time by JVM, as the compiler cannot check unchecked exceptions,</li>
+        <li>The programs with unchecked exceptions get compiled successfully but they give runtime errors if not handled.</li>
+        <li>These are child classes of Runtime Exception Class.</li>
+        <li>ArithmeticException, NullPointerException, NumberFormatException, IndexOutOfBoundException are a few of the unchecked exceptions in Java.</li>
+    </ul>
+
+    <h1>How does a Programmer Handles an Exception?</h1>
+    <p>Customized exception handling in java is achieved using five keywords: try, catch, throw, throws, and finally. Here is how these keywords work in short.
+
+        Try block contains the program statements that may raise an exception.
+        Catch block catches the raised exception and handles it.
+        Throw keyword is used to explicitly throw an exception.
+        Throws keyword is used to declare an exception.
+        Finally block contains statements that must be executed after the try block.</p>
+
+
+</body>
+
+</html>

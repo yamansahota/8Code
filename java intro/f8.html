@@ -1,0 +1,59 @@
+<html>
+
+<body>
+    <link href="assets/css/f1style.css" rel="stylesheet">
+
+    <h1>What is Inhertiance in Java ? </h1>
+    <p>A class that is derived from another class is called a subclass (also a derived class, extended class, or child
+        class). The class from which the subclass is derived is called a superclass (also a base class or a parent
+        class). <br><br>
+
+        Excepting Object, which has no superclass, every class has one and only one direct superclass (single
+        inheritance). In the absence of any other explicit superclass, every class is implicitly a subclass of Object.
+        <br><br>
+
+        Classes can be derived from classes that are derived from classes that are derived from classes, and so on, and
+        ultimately derived from the topmost class, Object. Such a class is said to be descended from all the classes in
+        the inheritance chain stretching back to Object.
+    </p>
+    <p>Inheritance is one of the critical features of OOPs (Object Oriented Programming System), where a new class is
+        created from an existing class (parent or base class). In simple terms, the inheritance would mean passing down
+        the characteristics of parents(habits, looks, height) to their child.</p>
+    <h1>Types of Inhertiance :</h1>
+    <p><b>1. Single level Inheritance</b> <br><br>
+
+        As the name suggests, this type of inheritance occurs for only a single class. Only one class is derived from
+        the parent class. In this type of inheritance, the properties are derived from a single parent class and not
+        more than that. As the properties are derived from only a single base class the reusability of a code is
+        facilitated along with the addition of new features.</p>
+    <p><b>2. Multi-level Inheritance</b> <br><br>
+        The multi-level inheritance includes the involvement of at least two or more than two classes. One class
+        inherits the features from a parent class and the newly created sub-class becomes the base class for another new
+        class.
+
+        As the name suggests, in the multi-level inheritance the involvement of multiple base classes is there. In the
+        multilevel inheritance in java, the inherited features are also from the multiple base classes as the newly
+        derived class from the parent class becomes the base class for another newly derived class.</p>
+
+    <p><b>3. Hierarchical Inheritance</b> <br><br>
+        The type of inheritance where many subclasses inherit from one single class is known as Hierarchical
+        Inheritance.
+
+        Hierarchical Inheritance a combination of more than one type of inheritance.
+
+        It is different from the multilevel inheritance, as the multiple classes are being derived from one superclass.
+        These newly derived classes inherit the features, methods, etc, from this one superclass. This process
+        facilitates the reusability of a code and dynamic polymorphism (method overriding).</p>
+    <p><b>4. Multiple Inheritance</b> <br><br>
+        Multiple inheritances is a type of inheritance where a subclass can inherit features from more than one parent
+        class. Multiple inheritances should not be confused with multi-level inheritance, in multiple inheritances the
+        newly derived class can have more than one superclass. And this newly derived class can inherit the features
+        from these superclasses it has inherited from, so there are no restrictions. In java, multiple inheritances can
+        be achieved through interfaces.</p>
+    <p><b>5. Hybrid Inheritance</b> <br><br>
+        Hybrid inheritance is a combination of more than two types of inheritances single and multiple. It can be
+        achieved through interfaces only as multiple inheritance is not supported by Java. It is basically the
+        combination of simple, multiple, hierarchical inheritances.</p>
+</body>
+
+</html>

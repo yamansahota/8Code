@@ -1,0 +1,95 @@
+<html>
+
+<body>
+    <link href="assets/css/f1style.css" rel="stylesheet">
+
+    <h1>What is String Handling and it's Functions ?</h1>
+    <p>Strings, which are widely used in Java programming, are a sequence of characters. In the Java programming
+        language, strings are objects.
+
+        The Java platform provides the String class to create and manipulate strings.</p>
+
+    <p>The most direct way to create a string is to write: <br><br>
+
+        String greeting = "Hello world!";<br><br>
+        In this case, "Hello world!" is a string literal—a series of characters in your code that is enclosed in double
+        quotes. Whenever it encounters a string literal in your code, the compiler creates a String object with its
+        value—in this case, Hello world!. <br><br>
+
+        As with any other object, you can create String objects by using the new keyword and a constructor. The String
+        class has thirteen constructors that allow you to provide the initial value of the string using different
+        sources, such as an array of characters: <br><br>
+
+        char[] helloArray = { 'h', 'e', 'l', 'l', 'o', '.' }; <br>
+        String helloString = new String(helloArray); <br>
+        System.out.println(helloString); <br> <br>
+        The last line of this code snippet displays hello.
+
+    </p>
+    <h1>Methods of Strings : </h1>
+    <p><b>
+
+            1. int length() Method : </b><br><br>
+        The length() method of string in Java is used to get the length of the string. In some cases, programs act
+        according to the length of the string, and hence this method comes in very handy at that time. <br><br>
+
+        Syntax: <br>
+
+        stringName.length()
+
+    </p>
+    <p><b>2. char charAt(int index) Method : </b><br><br>
+        The charAt() method of string in Java accepts an index number as an argument and returns the character at the
+        given index number. <br>
+
+        The indexing is from 0 to length-1, where length is the length of the string. In case the passed index number is
+        not present in the string(if it's equal to or greater than the length of the string or if it is a negative
+        number), StringIndexOutOfBoundsException is thrown. <br><br>
+
+        Syntax: <br>
+
+        stringName.charAt(index)</p>
+
+    <p><b>3. String concat(String string1) Method : </b><br><br>
+        The concat() method of string in Java is used for concatenating two strings. <br><br>
+
+        Syntax:
+        <br>
+        string.concat(anotherString)
+    </p>
+
+    <p><b>4. String substring(int beginIndex, int endIndex[optional]) method : </b><br><br>
+        Details: The substring() method in Java returns a specified part of a string. It takes two parameters: the
+        starting index (inclusive) and the ending index (exclusive). The substring will include characters starting from
+        the beginIndex up to endIndex - 1. <br>
+
+        If we do not provide the endIndex, it is assumed to be the length of the string. <br><br>
+
+        Syntax: <br>
+
+        string.substring(startIdx, endIdx)</p>
+
+    <p><b>5. String equals(String anotherString) method :</b> <br><br>
+        The equals() method of string in Java is used to verify if both the strings are equal or not. The equals method
+        accepts another string as an argument and then checks for the equality of both the strings. If both the strings
+        are equal, true is returned else false is returned. <br><br>
+
+        Syntax: <br>
+
+        string.equals(anotherString)</p>
+    <p><b>6. String contains(String substring) Method</b> <br><br>
+        The contains() method in Java is used to check if a string contains a specified substring. It returns true if
+        the substring is found and false otherwise. <br><br>
+
+        Syntax: <br>
+
+        string.contains(string)</p> 
+         <p><b>7. String join() Method :</b> <br><br>
+            Details: The join() method of string in Java as the name suggests is used to join a group of strings using the joiner between them. The joiner variable can be any character, string or a sequence of characters. <br><br>
+            
+            Syntax: <br>
+            
+            string.join(joiner, str1, str2, str3,..)</p>
+</body>
+
+</html>

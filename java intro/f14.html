@@ -1,0 +1,52 @@
+<html>
+
+<body>
+    <link href="assets/css/f1style.css" rel="stylesheet">
+
+    <h1>What are Interfaces ? </h1>
+    <p>Interfaces in Java are a set of abstract and public methods we want our classes to implement. It is the blueprint
+        of a class and contains static constants and abstract methods.
+
+        Interfaces are used to achieve abstraction and implement multiple inheritance.</p>
+    <p>An interface is a set of abstract methods you would want your class to implement. These methods are public and
+        abstract by default(you don’t have to explicitly use the “abstract” keyword), and any class implementing your
+        interface will need to provide implementations of those methods.</p>
+    <h1>How to Declare and Use an Interface in Java?</h1>
+    <p>
+        In Java, we use the keyword “interface” to declare an interface. The interface can be named using an appropriate
+        identifier. You will often find interfaces being named with an able suffix. For example, we have Runnable,
+        Callable, Comparable, etc. in Java, but this is not a mandatory convention.</p>
+    <p>//using the "interface" keyword for declaration <br>
+        interface Car { <br>
+        //some properties of a car <br>
+        public void start(); <br>
+        // some other methods <br>
+        }</p>
+
+    <p>An interface can be used when we want to achieve 100% abstraction. On the other hand, abstract classes can be
+        used to achieve anything between 0–100% abstraction.
+        An interface cannot have constructors because we cannot create objects of an interface.
+        If you want a class to achieve multiple inheritances, there is only one way: interfaces.
+        If an interface is made private, or if the methods in it are made private or protected, then a compilation error
+        will be thrown.</p>
+
+    <h1>Advantages and Disadvantages of Interfaces :</h1>
+    <ul>
+        <h2>Advantages : </h2>
+        <li>Interfaces can be used to enforce a contract- that is, provide a specification that classes must implement
+            certain methods if they want to use that interface - Any Car class must implement certain methods like
+            start, stop, etc. This can be enforced by using an interface such that every class implementing the Car
+            interface must implement all the enclosing methods.</li>
+        <li>Interfaces are used to achieve multiple inheritance - Our Honda Civic class can extend the DieselCar class
+            and implement the Sedan interface, effectively achieving multiple inheritance from both classes.</li>
+        <li>Interfaces can be used to achieve loose coupling - With interfaces, we can ensure that changes in one class
+            do not affect other classes.</li>
+        <h2>Disadvantages :</h2>
+        <li>Interfaces expose their member variables since they must be public. This could lead to some issues with respect to predicting the behavior of your code and testing(and the same reasons why one should avoid making class member variables public).</li>
+        <li>Since an interface can be thought of as a contract implemented by multiple classes, in certain cases, modifying the interface could lead to unpredictable behavior for the classes implementing them. For example, if a new method is added that is not default, all the old classes will throw compilation errors if those classes do not implement that method. To prevent this, as far as possible, interfaces must be immutable(this could be a disadvantage in certain situations, too).</li>
+        <li>If interfaces are not designed carefully, one interface could contain many methods that might not all be needed for a class. Hence, these methods may end up having an empty implementation, which may make your code verbose. To overcome this, interfaces must be designed carefully, keeping the Interface Segregation Principle in mind.</li>
+    </ul>
+
+</body>
+
+</html>
